@@ -22,7 +22,7 @@ export class UsuarioService {
 
 
   maperUsuario(data: any): Usuario {
-    var usuario = new Usuario();
+    const usuario = new Usuario();
     usuario.Id = data.Id;
     usuario.Correo = data.Correo;
     usuario.Contraseña = data.Contraseña;
