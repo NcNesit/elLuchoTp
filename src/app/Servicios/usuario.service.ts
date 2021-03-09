@@ -13,7 +13,7 @@ export class UsuarioService {
 
   async ObtenerUsuario(): Promise<Usuario> {
     try {
-      const response = <any> await (this.http.get(this.urlService.ApiObtenerUsuario).toPromise());
+      const response = await (this.http.get(this.urlService.ApiObtenerUsuario).toPromise()) as any;
       return this.maperUsuario(response);
     } catch (e) {
       console.error(e);
