@@ -1,36 +1,27 @@
-<body>
-    <ul ngbNav #nav="ngbNav" class="nav-pills">
+<ul class="nav" ngbNav #nav="ngbNav">
+  <li class="nav-item" ngbNavItem>
+    <a class="nav-link" ngbNavLink>Login</a>
+    <ng-template ngbNavContent>
+      <login></login>
+    </ng-template>
+  </li>
+  <li class="nav-item" ngbNavItem>
+    <a class="nav-link" ngbNavLink>Mis Tarjetas</a>
+    <ng-template ngbNavContent>
+      <Tarjetas></Tarjetas>
+    </ng-template>
+  </li>
+  <li class="nav-item" ngbNavItem>
+    <a class="nav-link" ngbNavLink>Cargar Tarjeta</a>
+    <ng-template ngbNavContent>
+      <agregar-tarjeta></agregar-tarjeta>
+    </ng-template>
 
-        <li ngbNavItem>
-            <a ngbNavLink>Login</a>
-            <ng-template ngbNavContent>
-                <login></login>
-            </ng-template>
-        </li>
+  </li>
 
-        <li ngbNavItem>
-            <a ngbNavLink>Mis Tarjetas</a>
-            <ng-template ngbNavContent>
-                <Tarjetas></Tarjetas>
-            </ng-template>
-        </li>
+  <li ngbNavItem [disabled]="true" class="ml-auto">
+    <a> rodrigobruchmann@gmail.com</a>
+  </li>
+</ul>
 
-        <li ngbNavItem>
-            <a ngbNavLink>Cargar Tarjeta</a>
-            <ng-template ngbNavContent>
-                <agregar-tarjeta></agregar-tarjeta>
-            </ng-template>
-        </li>
-
-
-        <li ngbNavItem [disabled]="true" class="ml-auto">
-            <a> rodrigobruchmann@gmail.com</a>
-        </li>
-
-
-    </ul>
-
-
-    <div [ngbNavOutlet]="nav"></div>
-
-</body>
+<div [ngbNavOutlet]="nav"></div>
