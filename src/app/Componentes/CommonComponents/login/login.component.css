@@ -1,9 +1,10 @@
-.formnulario {
-    margin: 0 auto;
-    width: 50%;
-    border-style: ridge
+.formulario {
+  margin: 0 auto;
+  max-width: 400px;
+  box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-.div {
-    padding-top: 5%;
+form {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
 }
