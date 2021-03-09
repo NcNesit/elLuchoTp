@@ -8,11 +8,12 @@ import { UrlService } from './url.service';
 })
 export class UsuarioService {
 
-  constructor(private http: HttpClient, private urlService: UrlService) { }
+  constructor(private http: HttpClient, private urlService: UrlService) {
+  }
 
   async ObtenerUsuario(): Promise<Usuario> {
     try {
-      const response = <any>await (this.http.get(this.urlService.ApiObtenerUsuario).toPromise());
+      const response = <any> await (this.http.get(this.urlService.ApiObtenerUsuario).toPromise());
       return this.maperUsuario(response);
     } catch (e) {
       console.error(e);
@@ -21,11 +22,11 @@ export class UsuarioService {
 
 
   maperUsuario(data: any): Usuario {
-  var usuario = new Usuario();
-  usuario.Id = data.Id;
-  usuario.Correo = data.Correo;
-  usuario.Contraseña = data.Contraseña; 
-  return usuario;
+    var usuario = new Usuario();
+    usuario.Id = data.Id;
+    usuario.Correo = data.Correo;
+    usuario.Contraseña = data.Contraseña;
+    return usuario;
   }
 }
 
