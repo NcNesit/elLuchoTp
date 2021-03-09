@@ -1,0 +1,9 @@
+.tituloModal {
+    margin: auto;
+    text-align: center;
+    color: red;
+}
+
+.montoTotal {
+    float: right;
+}

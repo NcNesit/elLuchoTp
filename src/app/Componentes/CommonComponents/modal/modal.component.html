@@ -1,0 +1,23 @@
+<ng-template #resumen let-modal>
+    <div class="modal-header">
+        <h4> {{ tarjeta.Nombre }}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body;">
+
+        <!-- <label>Fecha Vencimiento: {{ tarjeta.FechaVencimiento }}</label>
+        <label>Fecha Cierre: {{ tarjeta.FechaCierre }}</label>
+        <label>Monto: {{ tarjeta.Monto }}</label> -->
+        <tabla></tabla>
+        <label style="float: right; padding-right: 9%;"> Total : 4000 </label>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-dark" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>
+
+
+
+<button class="btn btn btn-dark mb-2 mr-2" (click)="openVerticallyCentered(resumen)">Ver resumen</button>

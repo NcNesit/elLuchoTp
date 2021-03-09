@@ -1,0 +1,9 @@
+.displayItems {
+    display: flex;
+    padding-left: 10%;
+}
+
+.titulo {
+    padding-bottom: 3%;
+    text-decoration: underline cornflowerblue;
+}

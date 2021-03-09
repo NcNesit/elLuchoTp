@@ -1,0 +1,60 @@
+.hover {
+    background-color: blue;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+img {
+    width: 150px;
+    margin-left: 20%;
+}
+
+.imgUser {
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+.imgSideBar {
+    float: left;
+    height: 40px;
+    width: 40px;
+    padding-right: 20%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border: groove;
+    margin-bottom: 2%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header {
+    margin-left: 12%;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}

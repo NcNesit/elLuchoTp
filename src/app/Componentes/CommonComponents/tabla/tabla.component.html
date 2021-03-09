@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col" sortable="name" (sort)="onSort($event)">Descripcion</th>
+            <th scope="col" sortable="area" (sort)="onSort($event)">N° cuota</th>
+            <th scope="col" sortable="population" (sort)="onSort($event)">Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let TarjetaGastos of gastos">
+            <td>
+                <img src="..//..//../../assets/Iconos/Tarjeta.png" class="mr-2" style="width: 20px">
+            </td>
+            <th scope="row">{{ TarjetaGastos.descripcion }}</th>
+            <td>{{ TarjetaGastos.cuota | number }} / 6</td>
+            <td>{{ TarjetaGastos.monto | number }}</td>
+
+        </tr>
+    </tbody>
+</table>
