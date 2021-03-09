@@ -1,9 +1,13 @@
-.displayItems {
-    display: flex;
-    padding-left: 10%;
+h1 {
+  padding-bottom: 2rem;
 }
 
-.titulo {
-    padding-bottom: 3%;
-    text-decoration: underline cornflowerblue;
+.displayItems {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.displayItems > Tarjeta {
+  margin: 1rem 1rem 0 0;
 }
