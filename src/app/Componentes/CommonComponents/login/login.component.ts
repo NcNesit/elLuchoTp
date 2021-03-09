@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Usuario } from '../../../Modelos/usuario';
 import { UsuarioService } from '../../../Servicios/usuario.service';
 
@@ -7,20 +7,14 @@ import { UsuarioService } from '../../../Servicios/usuario.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-
-  constructor(private usuarioService : UsuarioService) { }
-
+export class LoginComponent {
   usuario: Usuario = null;
 
-  ngOnInit(): void {
-    
+  constructor(private usuarioService: UsuarioService) {
   }
 
- async obtenerUsuario(){
- this.usuario = await this.usuarioService.ObtenerUsuario();
- console.log(this.usuario);
+  async obtenerUsuario(): Promise<void> {
+    this.usuario = await this.usuarioService.ObtenerUsuario();
+    console.log(this.usuario);
   }
-  
-
 }

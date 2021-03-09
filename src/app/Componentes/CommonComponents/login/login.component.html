@@ -1,19 +1,15 @@
-<div class="formnulario">
+<div class="formulario">
+  <form (submit)="obtenerUsuario">
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example3">Nombre de la tarjeta</label>
+      <input type="text" id="form6Example3" class="form-control"/>
+    </div>
 
-    <form class="div">
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example4">Monto</label>
+      <input type="number" id="form6Example4" class="form-control"/>
+    </div>
 
-        <div class="form-outline mb-4">
-            <input type="text" id="form6Example3" class="form-control" />
-            <label class="form-label" for="form6Example3">Nombre de la tarjeta</label>
-        </div>
-
-        <div class="form-outline mb-4">
-            <input type="number" id="form6Example4" class="form-control" />
-            <label class="form-label" for="form6Example4">Monto</label>
-        </div>
-
-
-
-    </form>
-    <button class="btn btn-dark btn-block mb-4" (click)="obtenerUsuario()">Agregar tarjeta</button>
+    <button type="submit" class="btn btn-dark btn-block">Agregar tarjeta</button>
+  </form>
 </div>
